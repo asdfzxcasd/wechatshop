@@ -1,0 +1,17 @@
+/* pages/user/index.wxss */
+.user {
+  height: 300rpx;
+  width: 90%;
+  background-color: white;
+  display: flex;
+}
+.user .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.order .content .iconn image {
+  width: 100rpx;
+  height: 100rpx;
+}

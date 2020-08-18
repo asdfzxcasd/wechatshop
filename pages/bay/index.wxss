@@ -1,0 +1,95 @@
+page {
+  padding-bottom: 90rpx;
+}
+.revice_address .user_info_row {
+  display: flex;
+  padding: 20rpx;
+}
+.revice_address .user_info_row .user_info {
+  flex: 5;
+}
+.revice_address .user_info_row .user_phone {
+  flex: 3;
+  text-align: right;
+}
+.cart_content .cart_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+.cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.cart_content .cart_main .cart_item navigator {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_item navigator image {
+  width: 80%;
+}
+.cart_content .cart_main .cart_item .cart_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_content .cart_main .cart_item .cart_wrap .carp_wrap_title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666666;
+}
+.cart_content .cart_main .cart_item .cart_wrap .carp_wrap_price {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_content .cart_main .cart_item .cart_wrap .carp_wrap_price .goods_price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+.cart_content .cart_main .cart_item .cart_wrap .carp_wrap_price .goods_button {
+  display: flex;
+}
+.cart_content .cart_main .cart_item .cart_wrap .carp_wrap_price .goods_button .goods_num {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  border: 1rpx solid #ccc;
+  display: flex;
+}
+.foot_tool .all_price {
+  flex: 5;
+  text-align: right;
+  padding-right: 15rpx;
+}
+.foot_tool .all_price .total_price .total_price_text {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.foot_tool .older_pay {
+  flex: 3;
+  background-color: var(--themeColor);
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

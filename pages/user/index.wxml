@@ -1,0 +1,57 @@
+<!--pages/user/index.wxml-->
+
+<!-- 用户信息 -->
+<view class="user">
+    <!-- 用户头像 -->
+    <view class="userimage">
+
+    
+    
+    </view>
+    <!-- 收益 -->
+    <view class="price">
+        <view class="left">
+            <navigator class="">
+                可提现收益>
+            </navigator>
+            <block>
+                ￥555.00
+                
+            </block>
+        
+        </view>
+        <view class="right">
+            <navigator class="" >
+                我的粉丝>
+            </navigator>
+            <block>
+                23
+                
+            </block>
+        
+        </view>
+    
+    </view>
+
+</view>
+
+<!-- 订单-->
+<view class="order">
+    <view class="title">我的订单</view>
+    <view class="content">
+        <view class="iconn">
+            <image class="" src="../../icos/price.png" mode="widthFix">
+                
+            </image>
+        
+        </view>
+    </view>
+
+
+</view>
+
+<!-- 工具 -->
+<view class="tool">
+    
+
+</view>

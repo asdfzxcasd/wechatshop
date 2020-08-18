@@ -1,0 +1,102 @@
+<view class="pyg_index">
+  <search></search>
+  <!-- 轮播图 -->
+  <view class="index_swiper">
+<!-- swiper标签默认宽高100%*150px -->
+    <swiper
+    interval="2000"
+    autoplay
+    indicator-dots
+    circular
+    >
+  <!-- 原图是750*340 -->
+      <swiper-item
+      wx:for="{{swiperlist}}"
+      wx:key="goods_id"
+      >
+        <navigator>
+      <!-- 图片标签的mode属性widefix让图片的标签宽高和图片标签内容的宽高等比例发生变化 -->
+          <image src="{{item.image_src}}">
+        
+          </image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  
+  </view>
+<!-- 轮播图 -->
+
+<!-- 导航 -->
+  
+  <view class="index_cate">
+    <picker id="zero_money">零元领</picker>
+    <navigator
+    wx:for="{{cateslist}}"
+    wx:key="name"
+    >
+      <image src="{{item.image_src}}" mode="widthFix" >
+        
+      </image>
+      
+    </navigator>
+    
+  </view>
+<!-- 导航 -->
+
+
+<!-- 通知 -->
+<view>
+  <swiper autoplay interval="2000" vertical="true" circular class="swiper_container">
+    <swiper-item 
+     wx:for="{{noricelist}}"
+     wx:key="id"
+    >
+      <image class="laba" src="../../icos/laba.png"></image>
+      <view class="swiper_item"><text>{{item.noricecontent}}</text></view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 通知 -->
+
+  <!-- 楼层 -->
+  <view class="index_floor">
+    <view class="floor_group"
+    wx:for="{{floorlist}}"
+    wx:for-item="item1"
+    wx:for-index="index1"
+    wx:key="floor_title"
+    >
+      <!-- 标题 -->
+      <view class="floor_title">
+        <image src="{{item1.floor_title.image_src}}" mode="widthFix">
+          
+        </image>
+        
+      </view>
+      <!-- 内容 -->
+      <view class="floor_list">
+        <navigator 
+        wx:for="{{item1.product_list}}"
+        wx:for-item="item2"
+        wx:for-index="index2"
+        wx:key="name"
+        
+        >
+          <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}">
+            
+          </image>
+        
+          
+        </navigator>
+        
+      </view>
+      
+    </view>
+    
+  </view>
+
+
+  <!-- 楼层 -->
+
+</view>
+
