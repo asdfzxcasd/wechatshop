@@ -1,5 +1,6 @@
 // pages/goos_detail/index.js
 import {request} from "../../request/index.js"
+const db = wx.cloud.database()
 //点击轮播图预览大图
 //   给轮播图绑定单击事件
 //   调用小程序api previewImage
@@ -65,8 +66,11 @@ Page({
   },
   //点击加入购物车
   handlecardadd(){
+   
+
+
     //获取缓存中的购物车
-    
+
     let cart = wx.getStorageSync("cart")||[];
     //判断商品对象是否存在于数组中
     let index = cart.findIndex(v => v.goods_id===this.goodsobj.data.message.goods_id)
@@ -88,6 +92,22 @@ Page({
     }
     //把购物车数据重新添加到缓存中
     wx.setStorageSync("cart",cart)
+    db.collection('cart').add({
+      // data 字段表示需新增的 JSON 数据
+      data: {
+        // _id: 'todo-identifiant-aleatoire', // 可选自定义 _id，在此处场景下用数据库自动分配的就可以了
+        user:cart
+      },
+      success: function(res) {
+        // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+        console.log(res)
+      }
+    })
+
+
+
+
+
     //弹窗提示
     wx.showToast({
       title: '加入成功',

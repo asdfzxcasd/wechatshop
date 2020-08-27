@@ -1,57 +1,66 @@
-<!--pages/user/index.wxml-->
-
-<!-- 用户信息 -->
-<view class="user">
-    <!-- 用户头像 -->
-    <view class="userimage">
-
-    
-    
-    </view>
-    <!-- 收益 -->
-    <view class="price">
+<!-- 活动通知 -->
+<view id="notice">
+    <!-- 上 -->
+        <navigator  url="/pages/news/news">
+            <view class="top"
+    >
         <view class="left">
-            <navigator class="">
-                可提现收益>
-            </navigator>
-            <block>
-                ￥555.00
-                
-            </block>
-        
+            <image class="" src="../../icos/xinfeng.png" mode="widthFix">
+            </image>
         </view>
         <view class="right">
-            <navigator class="" >
-                我的粉丝>
-            </navigator>
-            <block>
-                23
-                
-            </block>
-        
+            <view class="right_top">
+                <text class="title">拼团活动通知</text>
+            </view>
+            <view class="right_bottom"
+            >
+                {{pintuan[0].conter}}
+            </view>
         </view>
-    
     </view>
-
-</view>
-
-<!-- 订单-->
-<view class="order">
-    <view class="title">我的订单</view>
-    <view class="content">
-        <view class="iconn">
-            <image class="" src="../../icos/price.png" mode="widthFix">
-                
+        </navigator>
+<!-- 中 -->
+    <view class="top">
+        <view class="left">
+            <image class="" src="../../icos/xinfeng.png" mode="widthFix">
             </image>
-        
+        </view>
+        <view class="right">
+            <view class="right_top">
+                <text class="title">推广佣金提示</text>
+            </view>
+            <view class="right_bottom"
+            >
+                {{pintuan[1].conter}}
+            </view>
         </view>
     </view>
-
-
+<!-- 下 -->
+    <view class="top">
+        <view class="left">
+            <image class="" src="../../icos/xinfeng.png" mode="widthFix">
+            </image>
+        </view>
+        <view class="right">
+            <view class="right_top">
+                <text class="title">综合信息通知</text>
+            </view>
+            <view class="right_bottom"
+            >
+                {{pintuan[2].conter}}
+            </view>
+        </view>
+    </view>
 </view>
-
-<!-- 工具 -->
-<view class="tool">
-    
-
+<!-- 商城玩法 -->
+<view class="play">
+    <view class="play_title">
+        <view class="playtitle">
+            <image class="" src="../../icos/xinfeng.png" mode="widthFix">
+            </image>
+        </view>
+        <view class="playimg">
+            <text>商城玩法</text>
+        </view>
+    </view>
 </view>

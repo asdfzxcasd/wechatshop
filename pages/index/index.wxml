@@ -29,8 +29,11 @@
 <!-- 导航 -->
   
   <view class="index_cate">
-    <picker id="zero_money">零元领</picker>
-    <navigator
+    <view class="zero">
+      <picker id="zero_money"><text>零元购</text></picker>
+    </view>
+    <view class="zero_pay">
+     <navigator
     wx:for="{{cateslist}}"
     wx:key="name"
     >
@@ -39,24 +42,75 @@
       </image>
       
     </navigator>
+    </view>
+    
+   
     
   </view>
 <!-- 导航 -->
 
 
 <!-- 通知 -->
-<view>
+<view class="tongzhi">
   <swiper autoplay interval="2000" vertical="true" circular class="swiper_container">
     <swiper-item 
      wx:for="{{noricelist}}"
      wx:key="id"
     >
-      <image class="laba" src="../../icos/laba.png"></image>
+      <!-- <image class="laba" src="../../icos/laba.png"></image> -->
       <view class="swiper_item"><text>{{item.noricecontent}}</text></view>
     </swiper-item>
   </swiper>
 </view>
 <!-- 通知 -->
+
+
+<view class="play">
+    
+        <view class="playimg">
+            拼团大厅
+        </view>
+    
+</view>
+
+<!--  -->
+
+
+<!-- 最新爆款，人气最高 -->
+<view class="new_people">
+<!-- 顶部标题栏 -->
+  <view class="new_people_top">
+    <view class="new_top {{hover?'mg1':''}}" bindtap = "handle" data-new="1">
+      最新爆款
+    </view>
+    <view class="people_top {{hover?'':'mg2'}}" bindtap = "handle" data-new="2">
+      人气最高
+    </view>
+  </view>
+  <!-- 底部商品栏 -->
+  <view class="new_people_bottom">
+    <navigator url="">
+      {{zuixin}}
+    </navigator>
+
+  </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- 楼层 -->
   <view class="index_floor">

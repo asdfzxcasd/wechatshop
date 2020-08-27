@@ -10,7 +10,6 @@
             data-index="{{index}}"
             >
                 {{item}}
-                
             </view>
     
         </scroll-view>

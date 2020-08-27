@@ -13,8 +13,8 @@
     "pages/login/index",
     "pages/auth/index",
     "pages/bay/index",
-    "components/tabs/tabs"
-    
+    "components/tabs/tabs",
+    "pages/news/news"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,27 +31,22 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "icos/shouye.png",
-        "selectedIconPath": "icos/shouye1.png"
+        "text": "拼团大厅",
+        "iconPath": "icos/拼团大厅.jpg",
+        "selectedIconPath": "icos/拼团大厅.jpg"
+
       },
       {
         "pagePath": "pages/category/index",
-        "text": "分类",
-        "iconPath": "icos/fenlei.png",
-        "selectedIconPath": "icos/fenlei1.png"
-      },
-      {
-        "pagePath": "pages/cart/index",
-        "text": "购物",
-        "iconPath": "icos/shop.png",
-        "selectedIconPath": "icos/shop1.png"
+        "text": "动态",
+        "iconPath": "icos/动态.jpg",
+        "selectedIconPath": "icos/动态.jpg"
       },
       {
         "pagePath": "pages/user/index",
         "text": "我的",
-        "iconPath": "icos/wode1.png",
-        "selectedIconPath": "icos/wode.png"
+        "iconPath": "icos/我的.jpg",
+        "selectedIconPath": "icos/我的.jpg"
       }
     ]
   },
