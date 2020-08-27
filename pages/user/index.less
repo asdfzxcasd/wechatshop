@@ -1,39 +1,77 @@
-/* pages/user/index.wxss */
-.user{
-    height: 300rpx;
-    width: 90%;
-    background-color: white;
+#notice{
     display: flex;
-    .userimage{
-
-    }
-    .price{
+    flex-direction: column;
+    .top{
+        width: 100%;
+        height: 15vh;
+        border-bottom:2px solid black;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         .left{
-            
-
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10vw;  
+            image{
+                width: 80%;
+                height: 80%;    
+            }
         }
         .right{
-            
-
+            flex: 4;
+            margin-left: 5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            margin-left: 10vw;
+            .right_bottom{
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            margin-top: 10rpx;
+            }
         }
     }
 }
 
+.play{
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .play_title{
 
-.order{
-    .title{
-
-    }
-    .content{
-        .iconn{
-            image{
-                width:100rpx;
-                height: 100rpx;
-            }
+        width: 50%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: aqua;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        flex-direction: row;
+        .playtitle{
+            height: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            .image{
+            } 
+        }
+        .playimg{
+            padding-right: 0;
+            margin-left: 10%;
+            flex: 2;
+            font-size: 1.3rem;
         }
     }
 }

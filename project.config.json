@@ -1,4 +1,5 @@
 {
+	"cloudfunctionRoot": "cloudfunction/",
 	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
@@ -97,6 +98,13 @@
 					"id": -1,
 					"name": "支付",
 					"pathName": "pages/bay/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/auth/index",
 					"scene": null
 				}
 			]

@@ -67,7 +67,7 @@
     
     </view>
     <!-- 结算 -->
-    <view class="older_pay" bindtap = "handlepay">
+    <view class="older_pay" bindtap = "handleorderpay">
         支付（{{allnum}}）
     </view>
 

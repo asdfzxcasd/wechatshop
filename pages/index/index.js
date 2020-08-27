@@ -6,7 +6,11 @@ Page({
     //轮播图数组
     swiperlist:[],
     cateslist:[],
-    floorlist:[]
+    floorlist:[],
+    zuixin:'最新爆款',
+    renqi:'人气最高',
+    
+    hover:true
     
     
   },
@@ -68,32 +72,23 @@ Page({
     })
   },
 
-  onReady: function(){
-    
-  },
-  onShow: function(){
-    
-  },
-  onHide: function(){
-
-  },
-  onUnload: function(){
-
-  },
-  onPullDownRefresh: function(){
-
-  },
-  onReachBottom: function(){
-
-  },
-  onShareAppMessage: function(){
-
-  },
-  onPageScroll: function(){
-
-  },
   //item(index,pagePath,text)
-  onTabItemTap:function(item){
-
+  
+  handle(res){
+    const ney = res.currentTarget.dataset.new
+    if(ney==='1'){
+      
+      this.setData({
+        hover:true
+      })
+    }
+    else if(ney==='2'){
+      
+      this.setData({
+        hover:false
+      })
+    }
+   
   }
+
 });
