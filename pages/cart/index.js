@@ -97,14 +97,10 @@ Page({
   //  当商品数量为1时，用户在点击减号，提示是否删除
   //9.点击结算
   //  判断有没有商品和收货地址
-
     async handleaddress(){
       try {
       //1.获取权限状态
       //  如果发现属性名比较怪异的时候，要用方括号括起来
-      
-  
-  
       //1.获取权限状态
       const res1 = await getSetting()
       const scopeaddress = res1.authSetting["scope.address"]

@@ -10,10 +10,29 @@ Page({
     zuixin:'最新爆款',
     renqi:'人气最高',
     
-    hover:true
+    hover:true,
+    goodslist:[],
+    //进度条
+    speed:20,
+    //原价
+    original:3800,
+    // 已拼团
+    already:250
     
     
   },
+
+//接口要的参数
+queryparam:{
+  query:"",
+  cid:"1113",
+  pagenum:1,
+  pagesize:10
+},
+//总页数
+totalpages:0,
+
+
   //options(Object)
   //页面加载时就会触发的事件
   onLoad: function(options){
@@ -41,8 +60,9 @@ Page({
     "noricecontent":"大家好，从现在开始，小程序正式上线了请大家多多支持我们"},
     {"id":2,
     "noricecontent":"想怎么玩就怎么玩"}
-    ]})
-    
+    ]});
+    this.getgoodslist()
+
   },
   //获取轮播图数据
   getswiperlist(){
@@ -89,6 +109,21 @@ Page({
       })
     }
    
+  },
+  async getgoodslist(){
+    const res = await request(
+      {url:'/goods/search',data:this.queryparam}
+      )
+      console.log(res)
+      //获取总条数
+      const total = res.data.message.total
+      this.totalpages = Math.ceil(total/this.queryparam.pagesize)
+      console.log(this.totalpages)
+      this.setData({
+        goodslist:[...this.data.goodslist,...res.data.message.goods]
+      })
+      //关闭下拉刷新的
+      wx.stopPullDownRefresh()
   }
 
 });

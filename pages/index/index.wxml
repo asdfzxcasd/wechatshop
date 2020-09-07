@@ -1,3 +1,10 @@
+<view class="img">
+    <image class="" src="/icos/hahaha.jpg" mode="widthFix">
+        
+    </image>
+</view>
+
+
 <view class="pyg_index">
   <search></search>
   <!-- 轮播图 -->
@@ -9,6 +16,7 @@
     indicator-dots
     circular
     >
+
   <!-- 原图是750*340 -->
       <swiper-item
       wx:for="{{swiperlist}}"
@@ -37,17 +45,11 @@
     wx:for="{{cateslist}}"
     wx:key="name"
     >
-      <image src="{{item.image_src}}" mode="widthFix" >
-        
+      <image src="{{item.image_src}}" mode="widthFix" >   
       </image>
-      
     </navigator>
     </view>
-    
-   
-    
-
-    
+  
   </view>
 <!-- 导航 -->
 
@@ -91,13 +93,31 @@
   </view>
   <!-- 底部商品栏 -->
   <view class="new_people_bottom">
-    <navigator url="">
-      {{zuixin}}
-    </navigator>
-
+    <navigator class="goods_item"
+      wx:for="{{goodslist}}"
+      wx:key="goods_id"
+      url="/pages/goos_detail/index?goods_id={{item.goods_id}}"
+      >
+        <!-- 左侧图片容器 -->
+        <view class="goods_img">
+          <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'//bpic.588ku.com/element_pic/20/07/01/a5d1d2ef3b15734009f10d083d012383.jpg!/fw/253/quality/90/unsharp/true/compress/true'}}"></image>
+        
+        </view>
+        <!-- 右侧商品容器 -->
+        <view class="goods_title">
+          <view class="goods_name">{{item.goods_name}}</view>
+          <view class="goods_price"><text class="one">拼团:<text class="two">￥{{item.goods_price}}</text></text><text class="tress">原价:{{original}}</text></view>
+          <view class="progress-box">
+            <progress percent="{{speed}}" active stroke-width="10" border-radius="10"/>
+          </view>
+          <!-- 已拼团 -->
+          <view class="group">
+            <text class="one_one">已拼团:{{already}}次</text>
+            <text class="one_two">5/25人已拼团</text>
+          </view>
+        </view>
+      </navigator> 
   </view>
-
-
 </view>
 
 
@@ -150,9 +170,5 @@
     </view>
     
   </view>
-
-
   <!-- 楼层 -->
-
 </view>
-

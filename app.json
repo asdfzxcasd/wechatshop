@@ -14,7 +14,12 @@
     "pages/auth/index",
     "pages/bay/index",
     "components/tabs/tabs",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/shouyi/index",
+    "pages/play/index",
+    "pages/tuikuan/index",
+    "pages/fans/index",
+    "pages/my_team/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,10 +39,9 @@
         "text": "拼团大厅",
         "iconPath": "icos/拼团大厅.jpg",
         "selectedIconPath": "icos/拼团大厅.jpg"
-
       },
       {
-        "pagePath": "pages/category/index",
+        "pagePath": "pages/play/index",
         "text": "动态",
         "iconPath": "icos/动态.jpg",
         "selectedIconPath": "icos/动态.jpg"

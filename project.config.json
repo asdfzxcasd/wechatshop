@@ -28,7 +28,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -105,6 +105,41 @@
 					"id": -1,
 					"name": "授权",
 					"pathName": "pages/auth/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "收益",
+					"pathName": "pages/shouyi/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/index",
+					"pathName": "pages/play/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的粉丝",
+					"pathName": "pages/fans/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "动态",
+					"pathName": "pages/play/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的拼团",
+					"pathName": "pages/my_team/index",
 					"scene": null
 				}
 			]

@@ -1,0 +1,38 @@
+/* pages/my_team/index.wxss */
+page {
+  background-image: linear-gradient(45deg, #dda3a7, #e9ba8f);
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+.title .doing {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10rpx 0;
+  width: 25vw;
+  height: 8vw;
+  box-shadow: 5rpx 5rpx 5rpx #857d7d;
+  border-radius: 25rpx;
+}
+.title .hover {
+  background-image: linear-gradient(45deg, #eaecf4, #d9c7db);
+}
+.content {
+  margin-top: 50rpx;
+  width: 100vw;
+  height: 89vh;
+  border-radius: 30rpx;
+  background-color: white;
+}
+.content .img_data {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.content .img_data image {
+  width: 70vw;
+  height: 70vw;
+}

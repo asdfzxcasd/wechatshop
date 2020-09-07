@@ -1,0 +1,56 @@
+page {
+  background-color: #e0a9a1;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.box .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: -10vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box .logo image {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box .number {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  align-items: flex-end;
+}
+.box .number .one {
+  font-size: 15vw;
+  color: #7c7c7b;
+}
+.box .number .two {
+  margin-left: 3vw;
+}
+.box .user {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 20rpx 20rpx;
+  box-shadow: 5rpx 5rpx 20rpx #e0d2df;
+}
+.box .user .title {
+  background-image: linear-gradient(to right, #c9bed8, #dbb5ab);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.box .user .title text {
+  margin: 30rpx 0;
+  font-size: 30rpx;
+}

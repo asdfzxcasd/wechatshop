@@ -1,0 +1,52 @@
+page {
+  background-color: bisque;
+}
+.shouyi {
+  margin-top: 150rpx;
+  background-color: white;
+  border-radius: 40rpx;
+  width: 100%;
+  padding-top: 80rpx;
+}
+.shouyi .box {
+  background-image: linear-gradient(to right, #c99fba, #5a4991);
+  width: 70vw;
+  height: 25vh;
+  margin: 0rpx auto;
+  border-radius: 30rpx;
+}
+.shouyi .box .box_title {
+  font-size: 40rpx;
+  color: white;
+  margin: 20rpx 0 15% 30rpx;
+}
+.shouyi .box .box_conter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 30rpx;
+}
+.shouyi .box .box_conter .conter_left {
+  font-size: 100rpx;
+  padding-bottom: 0rpx;
+  color: white;
+}
+.shouyi .box .box_conter .conter_right {
+  background-color: white;
+  font-size: 40rpx;
+  border-radius: 20rpx;
+}
+.shouyi .mingxi {
+  margin-top: 5vh;
+}
+.shouyi .mingxi .mingxi_title {
+  margin-left: 20rpx;
+}
+.shouyi .mingxi .mingxi_title text {
+  font-size: 40rpx;
+  border-bottom: 4rpx solid black;
+}
+.shouyi .mingxi .mingxi_conter {
+  display: flex;
+  flex-direction: column;
+}

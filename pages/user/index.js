@@ -6,16 +6,11 @@ Page({
    */
   data: {
     // 拼团
-    pintuan:[
-      {conter:"去微软曲蔚然士大夫阿是法国1",
-      id:0
-    },
-      {conter:"去微软曲蔚然士大夫阿是法国2asfasdasdfasfasasaffasf",id:1},
-      {conter:"去微软曲蔚然士大夫阿是法国3",id:2},
-      {conter:"去微软曲蔚然士大夫阿是法国4",id:3}
-    ],
+    
     tuiguang:[],
-    huodong:[]
+    huodong:[],
+    //用户信息
+    code:[]
 
   },
   handleuser(){
@@ -28,5 +23,43 @@ Page({
       fail: ()=>{},
       complete: ()=>{}
     });
-  }
+  },
+  onLoad(){
+    const code = wx.getStorageSync("code")
+    console.log("用户头像")
+    console.log(code)
+    this.code = code
+    this.setData({
+      code
+    })
+  },
+  signin(e){
+    console.log(e)
+    const username = e.detail.userInfo.nickName
+    const db = wx.cloud.database()
+    // 查询当前用户所有的 counters
+    db.collection('user').where({
+      nickName: username
+    }).get({
+      success: res => {
+        this.setData({
+          code:res
+        })
+        console.log('[数据库] [查询记录] 成功: ', res)
+      },
+      fail: err => {
+        wx.showToast({
+          icon: 'none',
+          title: '查询记录失败'
+        })
+        console.error('[数据库] [查询记录] 失败：', err)
+      }
+    })
+  },
+  created() {
+    signin(e)
+    
+  },
+  
+
 })

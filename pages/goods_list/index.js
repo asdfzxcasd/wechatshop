@@ -54,10 +54,10 @@ Page({
    */
   onLoad: function (options) {
     this.queryparam.cid = options.cid
+    console.log(123)
+    console.log(this.queryparam.cid)
+    console.log(456)
     this.getgoodslist()
-    
-
-   
 
   },
   //获取商品列表数据
@@ -77,11 +77,7 @@ Page({
       
 
   },
-
-
-
  
-  
 //标题点击事件，只不过是在子组件中传递过来的
 handletabsitemchange(e){
   console.log(e)
@@ -96,35 +92,6 @@ handletabsitemchange(e){
   })
 },
 
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
@@ -137,17 +104,7 @@ handletabsitemchange(e){
     this.queryparam.pagenum = 1
     //重新发送请求
     this.getgoodslist()
-
   },
-
-  
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-
 
    //页面上划到底的事件
    onReachBottom(){
@@ -155,14 +112,10 @@ handletabsitemchange(e){
      if(this.queryparam.pagenum >= this.totalpages){
       wx.showToast({
         title: '没有下一页数据了'
-        
       });
-
      }else{
        this.queryparam.pagenum++
        this.getgoodslist()
      }
-    
-
   }
 })

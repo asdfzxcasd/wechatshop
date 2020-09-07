@@ -1,68 +1,123 @@
-#notice {
+.img {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+.user {
   display: flex;
   flex-direction: column;
 }
-#notice .top {
-  width: 100%;
-  height: 15vh;
-  border-bottom: 2px solid black;
-  display: flex;
-}
-#notice .top .left {
-  flex: 1;
+.user .user_name {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10vw;
+  height: 50vw;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 30rpx 30rpx;
 }
-#notice .top .left image {
-  width: 80%;
-  height: 80%;
-}
-#notice .top .right {
-  flex: 4;
-  margin-left: 5vw;
+.user .user_name .use {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10vw;
 }
-#notice .top .right .right_bottom {
-  display: -webkit-box;
+.user .user_name .use .user_image {
+  margin-top: 20rpx;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
   overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  margin-top: 10rpx;
+  margin-right: 30rpx ;
 }
-.play {
-  width: 100%;
+.user .user_name .use .user_nameinfo {
+  margin-top: 20rpx;
+}
+.user .user_name .use .user_nameinfo text {
+  font-size: 40rpx;
+}
+.user .user_name .use .user_nameinfo button {
+  margin-top: 40rpx;
+}
+.user .user_name .use_bottom {
+  display: flex;
+  font-size: 40rpx;
+  justify-content: space-between;
+  margin: 50rpx 60rpx;
+}
+.user .order {
+  background-color: white;
+  margin: 30rpx 30rpx;
+  height: 22vh;
+  border-radius: 20rpx;
+}
+.user .order .order_title {
+  font-size: 40rpx;
+  margin-left: 40rpx;
+}
+.user .order .order_title text {
+  border-bottom: 1px solid black;
+}
+.user .order .order_center {
   height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
-.play .play_title {
-  width: 50%;
-  height: 100%;
-  border: 1px solid black;
-  background-color: aqua;
-  border-radius: 10%;
+.user .order .order_center .image {
+  margin-top: 25rpx;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5vh;
-  flex-direction: row;
+  justify-content: space-around;
 }
-.play .play_title .playtitle {
-  height: 100%;
-  flex: 1;
+.user .order .order_center .image image {
+  width: 12vw;
+  height: 12vw;
+}
+.user .order .order_center .font {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.user .recommend {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 0 30rpx;
 }
-.play .play_title .playimg {
-  padding-right: 0;
-  margin-left: 10%;
-  flex: 2;
-  font-size: 1.3rem;
+.user .recommend .recommend_title {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 40rpx;
+}
+.user .recommend .recommend_title text {
+  border-bottom: 2rpx solid black;
+}
+.user .recommend .recommend_conter {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 10vw;
+}
+.user .recommend .recommend_conter .erwei {
+  display: flex;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #e0c7c7;
+  padding-bottom: 20rpx;
+  position: relative;
+}
+.user .recommend .recommend_conter .erwei image {
+  width: 15vw;
+  height: 15vw;
+}
+.user .recommend .recommend_conter .erwei .read {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.user .recommend .recommend_conter .erwei .read text {
+  margin-left: 60rpx;
+  font-size: 30rpx;
+}
+.user .recommend .recommend_conter .erwei button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
 }

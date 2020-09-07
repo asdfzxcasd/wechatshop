@@ -1,0 +1,22 @@
+<view class="box">
+    <view class="logo">
+        <image class="" src="/icos/no.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+            
+        </image>
+    </view>
+    <view class="number">
+        <text class="one">50</text><text class="two">人</text>
+    </view>
+    <view class="user">
+        <view class="title">
+            <text>我的直推</text>
+        </view>
+        <view class="username">
+            <view class="userinfo">
+                <text>张三</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+

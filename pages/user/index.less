@@ -1,77 +1,148 @@
-#notice{
-    display: flex;
-    flex-direction: column;
-    .top{
-        width: 100%;
-        height: 15vh;
-        border-bottom:2px solid black;
-        display: flex;
-        .left{
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: 10vw;  
-            image{
-                width: 80%;
-                height: 80%;    
-            }
-        }
-        .right{
-            flex: 4;
-            margin-left: 5vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            // align-items: center;
-            margin-left: 10vw;
-            .right_bottom{
-            display: -webkit-box;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
-            margin-top: 10rpx;
-            }
-        }
-    }
+.img{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
 
-.play{
-    width: 100%;
-    height: 10vh;
-    
+.user{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .play_title{
-
-        width: 50%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: aqua;
-        border-radius: 10%;
+    flex-direction: column;
+    .user_name{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5vh;
-        flex-direction: row;
-        .playtitle{
-            height: 100%;
-            flex: 1;
+        flex-direction: column;
+        height: 50vw;
+        background-color: white;
+        border-radius: 20rpx;
+        margin: 30rpx 30rpx;
+        .use{
             display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            // align-items: center;
-            .image{
-            } 
+            .user_image{
+            margin-top: 20rpx;
+            width: 20vw;
+            height: 20vw;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right:30rpx ;
         }
-        .playimg{
-            padding-right: 0;
-            margin-left: 10%;
-            flex: 2;
-            font-size: 1.3rem;
+        .user_nameinfo{
+            margin-top: 20rpx;
+            text{
+                font-size: 40rpx;
+                }
+            button{
+                margin-top: 40rpx;
+            }    
+            }
+        }
+        .use_bottom{
+            display: flex;
+            font-size: 40rpx;
+            justify-content: space-between;
+            margin:50rpx 60rpx;
+            .monry{
+            }
+            .fans{
+            }
+        }   
+    }
+    .order{
+        background-color: white;
+        margin: 30rpx 30rpx;
+        height: 22vh;
+        border-radius: 20rpx;
+        .order_title{
+            font-size: 40rpx;
+            margin-left: 40rpx;
+            text{
+                border-bottom: 1px solid black;
+            }
+
+        }
+        .order_center{
+            height: 10vh;
+            width: 100%;
+            .image{
+                margin-top: 25rpx;
+                display: flex;
+                justify-content: space-around;
+                
+                    
+                image{
+                    width: 12vw;
+                    height: 12vw;
+
+
+                }
+            }
+            .font{
+                margin-top: 10rpx;
+                display: flex;
+                justify-content: space-around;
+            }
+
         }
     }
+    .recommend{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+           border-radius: 20rpx;
+           margin: 0 30rpx;
+        .recommend_title{
+            margin-top: 20rpx;
+            margin-left: 20rpx;
+            font-size: 40rpx;
+            text{
+                border-bottom: 2rpx solid black;
+            }
+
+
+        }
+        .recommend_conter{
+            display: flex;
+            flex-direction: column;
+           
+            margin: 20rpx 10vw;
+            .erwei{
+                display: flex;
+                margin-bottom: 20rpx;
+                border-bottom: 1rpx solid rgb(224, 199, 199);
+                padding-bottom: 20rpx;
+                
+                position: relative;
+                image{
+                    width: 15vw;
+                    height: 15vw;
+                }
+                .read{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    
+                    text{
+                    margin-left: 60rpx;
+                    font-size: 30rpx;
+                    
+                    
+                    }
+                }
+                
+                button{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 50%;
+                    width: 100%;
+                    opacity: 0;
+                    
+                }
+            }
+            // .erweima{
+            //     background-color: rgba(177, 180, 205, 0.1);
+            // }
+
+        }
+    }
+   
 }

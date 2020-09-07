@@ -1,0 +1,29 @@
+
+<view class="title">
+    <view class="doing {{butt==1?'hover':''}}" bindtap = "handleteam" data-num="1">
+        <text>组团中</text>
+    </view>
+
+
+    <view class="doing {{butt==2?'hover':''}}" bindtap = "handleteam" data-num="2">
+        <text>组团成功</text>
+    </view>
+
+
+    <view class="doing {{butt==3?'hover':''}}" bindtap = "handleteam" data-num="3">
+        <text>组团失败</text>
+    </view>
+
+</view>
+
+<view class="content">
+    <view class="img_data">
+        <image src="/icos/zero.jpg"></image>
+    
+    </view>
+    <view class="data_image">
+        
+    </view>
+
+
+</view>

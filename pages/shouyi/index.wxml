@@ -1,0 +1,35 @@
+<view class="shouyi">
+    <view class="box">
+        <view class="box_title">
+            <text>可提现收益(元)</text>
+        </view>
+        <view class="box_conter">
+            <view class="conter_left">
+            ￥500
+            </view>
+            <view class="conter_right">
+                <text decode="{{true}}">&ensp;提现&ensp;</text>
+            </view>
+        </view>
+    </view>
+    <view class="mingxi">
+        <view class="mingxi_title">
+            <text>收益明细</text>
+
+        </view>
+        <view class="mingxi_conter">
+            <view class="conter_one">
+                拼团收益
+            </view>
+            <view class="conter_two">
+                邀请收益
+            </view>
+            <view class="conter_three">
+                业绩收益
+            </view>
+            <view class="conter_four">
+            </view>
+        
+        </view>
+    </view>
+</view>
